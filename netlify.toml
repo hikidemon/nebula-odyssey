@@ -1,0 +1,23 @@
+[build]
+  command = "bun run build"
+  publish = "out"
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NEXT_SUPPORT_NETLIFY_STATIC_EXPORT = "true"
+
+[dev]
+  command = "bun run dev"
+  port = 3000
+  targetPort = 3000
+
+[images]
+  remote_images = [
+    "https://images.squarespace-cdn.com/content/v1/53adb9cbe4b05e0d792c6c88/5396eee2-7598-4eb6-bde9-115f88197d11/Team-Liquid-Stacraft2-SC2---Wave-of-One-2022-Campaign---Jingna-Zhang-Art-Direction-Artwork1.jpg",
+    "https://as2.ftcdn.net/jpg/05/44/12/59/1000_F_544125965_945EtULx6gvALCOtraSUP0bZrgZBwE8d.jpg",
+    "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/8a8096ae-bdbf-480e-a053-760d699da41c/da1af42b-077c-4fcb-8bdc-63f0b3aa5964.png",
+    "https://images.wallpapersden.com/image/download/space-station-hd-sci-fi-planet-art_bmZubmaUmZqaraWkpJRnbmZnrWZraGc.jpg",
+    "https://static.vecteezy.com/system/resources/previews/027/576/316/non_2x/space-station-on-planet-earth-futuristic-space-station-3d-rendering-a-space-station-orbiting-a-planet-with-a-digital-wave-advanced-technology-and-holographic-displays-ai-generated-free-photo.jpg",
+    "https://media.istockphoto.com/id/1195199589/photo/dark-blue-spaceship-futuristic-interior-with-window-view-on-planet-earth-3d-rendering.jpg?s=612x612&w=0&k=20&c=H0_qt9Ry98ksk32RKqUBXlyWbnXtGlAt9ulqzq_UWl8=",
+    "https://media.istockphoto.com/id/1186882619/photo/exploring-futuristic-planetary-system-in-virutal-reality.jpg?s=612x612&w=0&k=20&c=MtwgJy8vEuF6LWGrOam8_PHPNwpI5IctsOnm2fzYwN8="
+  ]
